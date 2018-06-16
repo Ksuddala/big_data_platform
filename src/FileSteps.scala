@@ -1,4 +1,5 @@
-object FileSteps{
+
+Object FileSteps{
   
 def loadFile(path: String,sep: String,header: boolean): Dataframe = {
     val dataframe = spark
@@ -7,7 +8,7 @@ def loadFile(path: String,sep: String,header: boolean): Dataframe = {
                 .option(“header” ,false)
                 .csv(path)  
        
-     Dataframe
+     dataframe
 } 
 
   }
